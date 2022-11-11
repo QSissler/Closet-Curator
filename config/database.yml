@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: closet_curator_production
-  username: closet_curator
-  password: <%= ENV["CLOSET_CURATOR_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
