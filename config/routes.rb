@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :outfit_clothing_items
-  resources :outfits
   resources :clothing_items
+  resources :outfits
   resources :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

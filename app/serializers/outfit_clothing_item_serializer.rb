@@ -1,3 +1,3 @@
 class OutfitClothingItemSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :outfit_id, :clothing_item_id
 end
