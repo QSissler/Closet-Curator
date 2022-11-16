@@ -1,2 +1,3 @@
 class ClothingItemsController < ApplicationController
+    
 end
