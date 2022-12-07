@@ -4,6 +4,7 @@ import Signup from "./Components/Signup";
 import Home from "./Components/Home";
 import Login from "./Components/Login";
 import NavBar from "./Components/NavBar";
+import ClothingForm from "./Components/ClothingForm";
 
 function App() {
 
@@ -32,12 +33,16 @@ function App() {
            <Home user={user}/>
         </Route>
 
-        <Route exact path="/login">
+        <Route exact path="/Login">
             <Login setUser={setUser}/>
           </Route>
 
-          <Route exact path="/signup">
+          <Route exact path="/Signup">
             <Signup setUser={setUser}/>
+          </Route>
+
+          <Route exact path="/Clothing">
+            <ClothingForm setUser={setUser}/>
           </Route>
         
         </Switch>

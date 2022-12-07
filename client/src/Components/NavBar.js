@@ -24,10 +24,10 @@ function NavBar({ setUser, user }) {
         Add Clothing
       </NavLink>
       <NavLink exact to="/Closet">
-        Closet
+        My Closet
       </NavLink>
       <NavLink exact to="/Outfits">
-        Outfits
+        My Outfits
       </NavLink>
       <NavLink exact to="/Account">
         Account
@@ -38,10 +38,10 @@ function NavBar({ setUser, user }) {
     <NavLink exact to="/">
         Home
       </NavLink>
-        <NavLink exact to="/login">
+        <NavLink exact to="/Login">
             Log In
         </NavLink>
-        <NavLink exact to="/signup">
+        <NavLink exact to="/Signup">
         Signup
       </NavLink>
     </nav>)
