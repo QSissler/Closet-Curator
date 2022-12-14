@@ -1,10 +1,25 @@
 import React, {useState} from "react"
 
 function OutfitCard({outfit}){
-    return (
-        <div></div>
-    )
+    const [showFront, setShowFront] = useState(true)
 
+    function imageToggle(){
+        setShowFront(showFront => !showFront)
+    }
+
+    const outfitToDisplay = outfit.map((clothingItem)=>{
+        return (
+        <div className = "outfitClothe">
+        <img onClick={() => imageToggle()} src={showFront ? clothingItem.frontImage : clothingItem.backImage}/>
+        <h3>{clothingItem.name}</h3>
+        </div>
+        )
+    })
+    return(
+        <div className = "fit">
+            {outfitToDisplay}
+            </div>
+    )
 }
 
 
