@@ -1,10 +1,8 @@
 import React, {useState, useEffect, createContext, useContext} from "react";
 import ClothingList from "./ClothingList";
-import { OutfitContext } from "../Context/OutfitProvider";
 
 
 function ClothingContainer(){
-    let [outfits, setOutfits] = useContext(OutfitContext);
 
     const [clothes, setClothes] = useState([])
     const [outfit, setOutfit] = useState([])
