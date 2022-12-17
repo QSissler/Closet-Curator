@@ -11,7 +11,7 @@ function ClothingContainer(){
 
 
     useEffect(() => {
-      fetch("http://localhost:8004/clothes")
+      fetch("/clothing_items")
       .then(res => res.json())
       .then(clothingData => setClothes(clothingData))
     }, [])
