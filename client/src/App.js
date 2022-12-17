@@ -5,6 +5,7 @@ import Home from "./Components/Home";
 import Login from "./Components/Login";
 import NavBar from "./Components/NavBar";
 import ClothingForm from "./Components/ClothingForm";
+import ClothingContainer from "./Components/ClothingContainer";
 
 function App() {
 
@@ -43,6 +44,10 @@ function App() {
 
           <Route exact path="/Clothing">
             <ClothingForm setUser={setUser}/>
+          </Route>
+
+          <Route exact path="/Clothes">
+            <ClothingContainer />
           </Route>
         
         </Switch>

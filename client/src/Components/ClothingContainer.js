@@ -17,8 +17,8 @@ function ClothingContainer(){
     }, [])
 
     function handleClick(){
-        setOutfits([...outfits,outfit]);
-        setOutfit([]);
+        // setOutfits([...outfits,outfit]);
+        // setOutfit([]);
         
     }
     
