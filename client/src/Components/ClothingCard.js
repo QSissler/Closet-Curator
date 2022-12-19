@@ -1,4 +1,5 @@
-function ClothingCard(){
+
+function ClothingCard({clothingItem, addToOutfit, onDeleteItem}){
 
     return(
         <div>
