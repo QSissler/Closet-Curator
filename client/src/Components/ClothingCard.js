@@ -1,5 +1,11 @@
 
 function ClothingCard({clothingItem, addToOutfit, onDeleteItem}){
+    const [showFront, setShowFront] = useState(true)
+
+    function imageToggle(){
+        setShowFront(showFront => !showFront)
+    }
+
 
     return(
         <div className="clothing">
