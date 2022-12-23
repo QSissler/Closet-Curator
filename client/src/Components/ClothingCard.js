@@ -6,6 +6,13 @@ function ClothingCard({clothingItem, addToOutfit, onDeleteItem}){
         setShowFront(showFront => !showFront)
     }
 
+    function handleDelete(){
+        fetch(`http://localhost:8004/clothes/${clothingItem.id}`, {
+            method : "DELETE"
+        })
+        onDeleteItem(clothingItem.id)
+    }
+
 
     return(
         <div className="clothing">
