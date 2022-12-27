@@ -1,3 +1,4 @@
+import useState from "react"
 
 function ClothingCard({clothingItem, addToOutfit, onDeleteItem}){
     const [showFront, setShowFront] = useState(true)
