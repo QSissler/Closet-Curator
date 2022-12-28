@@ -70,7 +70,7 @@ function ClothingContainer(){
             <option value="Accessories">Accessories</option>
           </select>
             </div>
-            <ClothingList clothes = {clothesToDisplay} addToOutfit = {addToOutfit} onDeleteItem={onDeleteItem}/>
+            <ClothingList clothes={clothesToDisplay} addToOutfit={addToOutfit} onDeleteItem={onDeleteItem}/>
             
         
         </div>

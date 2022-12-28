@@ -46,7 +46,7 @@ function App() {
             <ClothingForm setUser={setUser}/>
           </Route>
 
-          <Route exact path="/Clothes">
+          <Route exact path="/Closet">
             <ClothingContainer />
           </Route>
         
