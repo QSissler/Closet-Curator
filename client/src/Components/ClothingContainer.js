@@ -16,6 +16,7 @@ function ClothingContainer(){
       .then(clothingData => setClothes(clothingData))
     }, [])
 
+    console.log(clothes)
     function handleClick(){
         // setOutfits([...outfits,outfit]);
         // setOutfit([]);
