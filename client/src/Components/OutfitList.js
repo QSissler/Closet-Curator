@@ -1,7 +1,8 @@
-import React from "react" 
+import React, {useState} from "react" 
 import OutfitCard from "./OutfitCard"
 
 function OutfitList(){
+    const [outfits, setOutfits] = useState([])
     
     
     const outfitsToDisplay = outfits.map((fit)=>{
